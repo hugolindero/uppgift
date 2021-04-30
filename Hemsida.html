@@ -21,16 +21,44 @@
 <!-- Sökruta ska finnas över bildspel -->
 <!-- ladda upp -->
 </header>
+
+
+
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12 navbar">
-            <a href="Hemsida.html" class="logo navbar-brand text-white offset-md-2">WowFinder</a>
+        <div class="col-md-12 navbar topp-link">
+            <a href="Hemsida.html" class="logo navbar-brand text-white offset-md-1">WowFinder</a>
             <ul class="nav">
                 <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Forum</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Contact us</a></li>
+                <li class="nav-item"><button class="loginbtn" onclick="document.getElementById('login-form')">Log in</button></li>
             </ul>
+            
+        </div>
+        <div id="login-form" class="login-page">
+          <div class="form-box">
+            <div class="button-box">
+              <div id="btn"></div>
+              <button type="button" onclick="login()" class="toggle-btn">Log in</button>
+              <button type="button" onclick="register()" class="toggle-btn">Register</button>
+            </div>
+            <form id="login" class="input-group-login">
+              <input type="text" class="input-field" placeholder="Email id" required>
+              <input type="checkbox" class="check-box"><span>Remember Password</span>
+              <button type="submit" class="submit-btn">Log in</button>
+            </form>
+            <form id="register" class="input-group-register">
+              <input type="text" class="input-field" placeholder="First name" required>
+              <input type="text" class="input-field" placeholder="Last name" required>
+              <input type="email" class="input-field" placeholder="Email" required>
+              <input type="password" class="input-field" placeholder="Enter password" required>
+              <input type="password" class="input-field" placeholder="Confirm password" required>
+              <input tupe="checkbox" class="check-box"><span>I agree that Hugo can use your email</span>
+              <button type="submit" class="submit-btn">Register</button>
+            </form>
+          </div>
         </div>
 
         <!-- slider banner	 -->
@@ -73,13 +101,14 @@
     </div>
 </div>
 
+
     <nav class="drop"> <!-- Drop down meny för snabb orientering--> </nav>
     <!-- Lista med de mest sällsynta föremålen -->
     <!-- ha en dynamisk timer som visar tid för boss reset -->
     <!-- ha en sidomeny -->
 
     <footer> <!-- "klicka här för att komma till toppen --> </footer>
-    https://www.youtube.com/watch?v=GMLsHHHOnjw
+   
 
 </body>
 </html>

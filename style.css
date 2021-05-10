@@ -4,10 +4,29 @@
 	box-sizing: border-box;
 	font-family: 'Poppins',sans-serif;
 }
+.forum{
+background-color:rgba(0, 0, 0, 0.5);
+height:500px;
+width:100%;
+}
+.search-btn{
+	outline: none;
+	position: relative;
+}
+
+::placeholder {
+	color: black;
+	opacity: 1;
+  }
+  
 #login-form{
+	
 	display: none;
+	margin-left: auto;
+	margin-right: auto;
 }
 .form-box{
+	background-color:rgba(0, 0, 0, 0.5);
 	width: 380px;
 	height:480px;
 	position: relative;
@@ -42,6 +61,7 @@
 }
 .input-group-login
 {
+	
 	top: 150px;
 	position:absolute;
 	width:280px;
@@ -49,6 +69,7 @@
 }
 .input-group-register
 {
+	
     top: 120px;
 	position:absolute;
 	width:280px;
@@ -56,6 +77,8 @@
 }
 .input-field
 {
+	
+	color:black;
 	width: 100%;
 	padding:10px 0;
 	margin:5px 0;
@@ -84,7 +107,7 @@
 }
 span
 {
-	color:#777;
+	color:black;
 	font-size:12px;
 	bottom:68px;
 	position:absolute;
@@ -95,7 +118,7 @@ span
 }
 #login input
 {
-	color:white;
+	
 	font-size:15px;
 }
 #register
@@ -104,7 +127,7 @@ span
 }
 #register input
 {
-	color:white;
+	
 	font-size: 15px;
 }
 
@@ -117,14 +140,13 @@ span
 
 
 .navbar{
+	background-color:rgba(0, 0, 0, 0.5);
 	position: absolute;
 	top: 0;
 	z-index: 99999;
 	padding:25px 0;
 }
-.topp-link{
-	background-color: rgba(0, 0, 0, 0);
-}
+
 .navbar .logo{
 	font-size: 1.5em;
 	text-transform: uppercase;

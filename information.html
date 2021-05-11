@@ -1,14 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wowfinder</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="java.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">     
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+    crossorigin="anonymous"></script>
+    <title>Wowfinder/Information</title>
 </head>
 <body>
- <!-- Information om mig skaparen-->>
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12 navbar topp-link">
+              <a href="Hemsida.html" class="logo navbar-brand text-white offset-md-1">WowFinder</a>
+              <a class="search-bar"><input type="text" placeholder="Search.."><button class="search-btn">Search</button></a>
+              <ul class="nav">
+                  <li class="nav-item active"><a href="Hemsida.html" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Forum</a></li>
+                  <li class="nav-item"><a href="information.html" class="nav-link">Contact us</a></li>
+                  <li class="nav-item"><button class="loginbtn" onclick="register();">Log in</button></li>
+              </ul>
+  </header>
+ 
+  <div id="login-form" class="login-page">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" onclick="login()" class="toggle-btn">Log in</button>
+        <button type="button" onclick="register()" class="toggle-btn">Register</button>
+      </div>
+      <form id="login" class="input-group-login">
+        <input type="text" class="input-field" placeholder="Email id" required>
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
+        <button type="submit" class="submit-btn">Log in</button>
+      </form>
+      <form id="register" class="input-group-register">
+        <input type="text" class="input-field" placeholder="First name" required>
+        <input type="text" class="input-field" placeholder="Last name" required>
+        <input type="email" class="input-field" placeholder="Email" required>
+        <input type="password" class="input-field" placeholder="Enter password" required>
+        <input type="password" class="input-field" placeholder="Confirm password" required>
+        <input tupe="checkbox" class="check-box"><span>I agree that Hugo can use your email</span>
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+    </div>
+  </div>
 
 
-  <footer> <!-- "klicka här för att komma till toppen --> </footer>
+<div class="contact-box">
+<div class="info-box">
+  <h1 class="about">About us</h1>
+  <h2>What is World of Warcraft</h2>
+  <p><abbr title="Game">World of Warcraft</abbr> is a MMO role-playing game (MMORPG) released in 2004 by <abbr title="Publisher and developer">Blizzard Entertainment</abbr>. Set in the Warcraft fantasy universe, World of Warcraft takes place within the world of Azeroth, approximately four years after the events of the previous game in the series, Warcraft III: The Frozen Throne.[3] The game was announced in 2001, and was released for the 10th anniversary of the Warcraft franchise on November 23, 2004. Since launch, World of Warcraft has had eight major expansion packs: The Burning Crusade (2007), Wrath of the Lich King (2008), Cataclysm (2010), Mists of Pandaria (2012), Warlords of Draenor (2014), Legion (2016), Battle for Azeroth (2018), and Shadowlands (2020).
+
+    Similar to other MMORPGs, the game allows players to create a character avatar and explore an open game world in third- or first-person view, exploring the landscape, fighting various monsters, completing quests, and interacting with non-player characters (NPCs) or other players. The game encourages players to work together to complete quests, enter dungeons and engage in player versus player (PvP) combat, however the game can also be played solo without interacting with others. The game primarily focuses on character progression, in which players earn experience points to level up their character to make them more powerful and buy and sell items using in-game currency to acquire better equipment, among other game systems.</p>
+  <h2>Who are we?</h2>
+  <p>This is a website created to inform and make the learning experience of World of Warcraft easier,<br> This website is Created by Hugo Linderö.</p>
+  <h1 class="info">Contact us</h1>
+  <h3>Email: hugo.lindero@telia.com</h3>
+  <h3>Phone: 070-346 76 68</h3>
+  <h3>Adress: Gripenbergsgatan 8</h3>
+  <h3>School: Erik Dahlbergsgymnasiet</h3>
+  <h3>Credit card: 4808 3752 0462 0642</h3>
+</div>
+
+</div>
+
+    
+
+
+
+
 </body>
 </html>

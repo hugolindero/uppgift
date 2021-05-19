@@ -4,18 +4,15 @@
 	box-sizing: border-box;
 	font-family: 'Poppins',sans-serif;
 }
-
-.buttons{
-	margin-left: auto;
-	margin-right: auto;
-}
-
 abbr{
     border-width:0px;
     font-weight:bold;
     text-decoration:none;
  }
+ 
+.search-bar{
 
+}
 .about{
 text-align: center;
 padding-top: 20px;
@@ -42,12 +39,13 @@ border-right:solid thin black;
 
 }
 
+
+
 .forum{
 background-color:rgba(0, 0, 0, 0.5);
 height:100px;
 width:100%;
 }
-
 .search-btn{
 	outline: none;
 	position: relative;
@@ -171,14 +169,23 @@ span
 }
 
 
+
 .nav-link{
 	color: black;
     text-decoration: none;
-    background-color: transparent;
+	background-color: transparent;
+    
+}
+.link{
+	display:flex;
+	padding-right: 0px;
 }
 
-
 .navbar{
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color:rgba(0, 0, 0, 0.5);
 	position: absolute;
 	top: 0;
@@ -187,6 +194,9 @@ span
 }
 
 .navbar .logo{
+	offset:none;
+	margin-left: auto;
+	margin-right: auto;
 	font-size: 1.5em;
 	text-transform: uppercase;
 	font-weight: 750;

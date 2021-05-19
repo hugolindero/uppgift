@@ -12,6 +12,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
     crossorigin="anonymous"></script>
+    <link href="ipadstyle.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width: 1024px)" />
+    <link href="mobilstyle.css" rel="stylesheet" type="text/css" media="only screen and (max device-width:480px" />
+    
 
 </head>
 <body>
@@ -28,11 +31,10 @@
     <div class="row">
         <div class="col-md-12 navbar topp-link">
             <a href="Hemsida.html" class="logo navbar-brand text-white offset-md-1">WowFinder</a>
-            <a class="search-bar"><input type="text" placeholder="Search.."><button class="search-btn">Search</button></a>
-            <ul class="nav">
+            <a class="search-bar col-sm-7"><input type="text" placeholder="Search.."><button class="search-btn">Search</button></a>
+            <ul class="nav offset-md-4">
                 <li class="nav-item active"><a href="Hemsida.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Forum</a></li>
                 <li class="nav-item"><a href="information.html" class="nav-link">Contact us</a></li>
                 <li class="nav-item"><button class="loginbtn" onclick="register();">Log in</button></li>
             </ul>
@@ -45,12 +47,12 @@
               <button type="button" onclick="login()" class="toggle-btn">Log in</button>
               <button type="button" onclick="register()" class="toggle-btn">Register</button>
             </div>
-            <form id="login" class="input-group-login">
-              <input type="text" class="input-field" placeholder="Email id" required>
+            <form id="login" class="input-group-login" id="input-group-login">
+              <input type="text" class="input-field" id="email" placeholder="Email id" required>
               <input type="checkbox" class="check-box"><span>Remember Password</span>
               <button type="submit" class="submit-btn">Log in</button>
             </form>
-            <form id="register" class="input-group-register">
+            <form id="register" class="input-group-register" id="input-group-register">
               <input type="text" class="input-field" placeholder="First name" required>
               <input type="text" class="input-field" placeholder="Last name" required>
               <input type="email" class="input-field" placeholder="Email" required>

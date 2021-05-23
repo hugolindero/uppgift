@@ -13,7 +13,8 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
     crossorigin="anonymous"></script>
     <link href="ipadstyle.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width: 1024px)" />
-    <link href="mobilstyle.css" rel="stylesheet" type="text/css" media="only screen and (max device-width:480px" />
+    <link href="mobilstyle.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" />
+   
     
 
 </head>
@@ -29,36 +30,36 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12 navbar topp-link">
-            <a href="Hemsida.html" class="logo navbar-brand text-white offset-md-1">WowFinder</a>
-            <a class="search-bar col-sm-7"><input type="text" placeholder="Search.."><button class="search-btn">Search</button></a>
-            <ul class="nav offset-md-4">
+        <div class="col-md-12 navbar topp-link"> <!-- Skapar en navbar med inlagd column-->
+            <a href="Hemsida.html" class="logo navbar-brand text-white offset-md-1">WowFinder</a> <!-- skapar en enkel logga och länkar så man kan trycka, med förbestämd färg-->
+            <a class="search-bar col-md-8"><input type="text" placeholder="Search.."><button class="search-btn">Search</button></a> <!-- skapar en sök funktion-->
+            <ul class="nav offset-md-4"> <!-- Skapar en lista, där knapparna ska ligga-->
                 <li class="nav-item active"><a href="Hemsida.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
                 <li class="nav-item"><a href="information.html" class="nav-link">Contact us</a></li>
-                <li class="nav-item"><button class="loginbtn" onclick="register();">Log in</button></li>
+                <li class="nav-item"><button class="loginbtn" onclick="register();">Log in</button></li> <!-- Gör en knapp till min login-form-->
             </ul>
             
         </div>
-        <div id="login-form" class="login-page">
+        <div id="login-form" class="login-page"> <!-- Skapar en Div för log in sidan-->
           <div class="form-box">
             <div class="button-box">
               <div id="btn"></div>
-              <button type="button" onclick="login()" class="toggle-btn">Log in</button>
-              <button type="button" onclick="register()" class="toggle-btn">Register</button>
+              <button type="button" onclick="login()" class="toggle-btn">Log in</button> <!-- log in knapp -->
+              <button type="button" onclick="register()" class="toggle-btn">Register</button> <!--Registrera -->
             </div>
-            <form id="login" class="input-group-login" id="input-group-login">
-              <input type="text" class="input-field" id="email" placeholder="Email id" required>
+            <form id="login" class="input-group-login" id="input-group-login">  <!--skapar en form för log in -->
+              <input type="text" class="input-field" id="email" placeholder="Email id" required> <!--Skapar sedan olika krav som ska finnas på rutan -->
               <input type="checkbox" class="check-box"><span>Remember Password</span>
               <button type="submit" class="submit-btn">Log in</button>
             </form>
-            <form id="register" class="input-group-register" id="input-group-register">
+            <form id="register" class="input-group-register" id="input-group-register"> <!-- Gör samma som för den övre fast för register-->
               <input type="text" class="input-field" placeholder="First name" required>
               <input type="text" class="input-field" placeholder="Last name" required>
               <input type="email" class="input-field" placeholder="Email" required>
               <input type="password" class="input-field" placeholder="Enter password" required>
               <input type="password" class="input-field" placeholder="Confirm password" required>
-              <input tupe="checkbox" class="check-box"><span>I agree that Hugo can use your email</span>
+              <input tupe="checkbox" class="check-box"><span>I agree that Hugo can use your email</span> <!-- tryck för att acceptera-->
               <button type="submit" class="submit-btn">Register</button>
             </form>
           </div>
@@ -66,14 +67,14 @@
 
         <!-- slider banner	 -->
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <div id="carousel" class="carousel slide" data-ride="carousel"> <!--Skapar början på ett "bildspel" -->
+          <ol class="carousel-indicators"> <!--Skapar sliders (knappar att trycka på för nästa bild) -->
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousels" data-slide-to="2"></li>
           </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+          <div class="carousel-inner"> <!-- skapar en inre div för text-->
+            <div class="carousel-item active"> <!-- sätter som active vilket gör den till bild 1-->
                 <div class="info">
                       <h1>Fast and Easy information</h1>
                       
@@ -92,31 +93,26 @@
                   </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev"> <!-- Ger knapparna en funktion, genom att klicka höger vänster-->
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
         </div>
     </div>
 </div>
-<div class="forum">
- <div class="news">
+<div class="forum"> <!-- Här skulle man länka API til ett forum som sedan skulle visas under-->
+ <div class="news"> <!-- Ett nyhetsflöde skulle även finnas under-->
    
 
  </div>
 </div>
 
 
-    <nav class="drop"> <!-- Drop down meny för snabb orientering--> </nav>
-    <!-- Lista med de mest sällsynta föremålen -->
-    <!-- ha en dynamisk timer som visar tid för boss reset -->
-    <!-- ha en sidomeny -->
-
-    <footer> <!-- "klicka här för att komma till toppen --> </footer>
+  
    
 
 </body>

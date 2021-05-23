@@ -10,6 +10,7 @@ abbr{
     text-decoration:none;
  }
 
+ 
 .about{
 text-align: center;
 padding-top: 20px;
@@ -227,18 +228,18 @@ span
 }
 
 /*slider*/
-#carouselExampleIndicators{
+#carousel{
 	position: relative;
 	height: 100vh;
 	width: 100%;
 }
-#carouselExampleIndicators .carousel-inner{
+#carousel .carousel-inner{
 	position: relative;
 	height: 100%;
 	width: 100%;
 	background: #000;
 }
-#carouselExampleIndicators .carousel-inner:before{
+#carousel .carousel-inner:before{
 	position: absolute;
 	content: '';
 	background: rgba(0, 0, 0, 0.45);
@@ -248,29 +249,29 @@ span
 	width: 100%;
 	z-index: 1;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item{
+#carousel .carousel-inner .carousel-item{
 	position: relative;
 	height: 100%;
 	width:100%;
-	background-image: url('bilder/bild1.jpg');
+	background-image: url('bilder/ipad1.jpg');
 	background-size: 100% 100%;
 	background-position: center;
 	background-attachment: fixed;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2){
-	background-image: url('bilder/bild2.jpg');
+#carousel .carousel-inner .carousel-item:nth-child(2){
+	background-image: url('bilder/ipad2.jpg');
 	background-size: 100% 100%;
 	background-position: center;
 	background-attachment: fixed;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3){
-	background-image: url('bilder/bild3.jpg');
+#carousel .carousel-inner .carousel-item:nth-child(3){
+	background-image: url('bilder/ipad3.jpg');
 	background-size: 100% 100%;
 	background-position: center;
 	background-attachment: fixed;
 }
 
-#carouselExampleIndicators .carousel-inner .carousel-item .info{
+#carousel .carousel-inner .carousel-item .info{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -279,7 +280,7 @@ span
 	z-index: 1;
 	text-align: center;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item h1{
+#carousel .carousel-inner .carousel-item h1{
 	height: auto;
 	color:rgb(211, 204, 204);
 	font-family:Garamond;
@@ -289,7 +290,7 @@ span
 	font-size: 5.5em;
 	font-weight: 750;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item p{
+#carousel .carousel-inner .carousel-item p{
 	height: auto;
 	color: #ccc;
 	width: 100%;

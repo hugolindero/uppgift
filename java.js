@@ -1,7 +1,7 @@
 ﻿
 
- var x,y,z; 
- var xr,yr,zr;
+ var x,y,z;  //Skapar variabler för Register 
+ var xr,yr,zr; //Skapar för Log in
 window.onload = function (){
      x=document.getElementById('login-form');
     y=document.getElementById('register');
@@ -15,7 +15,7 @@ window.onload = function (){
 
 function register()
 {
-
+//sätter ut förbestämda kordinater register, så det ska röra sig vid tryck
     console.log("register"); 
     x.style.display = "block"; 
     x.style.left='-400px';
@@ -29,13 +29,14 @@ function register()
 }
 function login()
 {
+    //sätter ut förbestämda kordinater för log in, så det ska röra sig vid tryck
     xr.style.left='50px';
     x.style.left='50px';
     y.style.left='450px';
     z.style.left='0px';
   
 }
-var modal = document.getElementById('login-form');
+var modal = document.getElementById('login-form'); //Skapar ett event då den krånglade och inte ville visas korrket, detta öppnar vid klick vårat föster form
 window.onclick = function(event) 
 {
     if (event.target == modal) 

@@ -9,10 +9,18 @@ abbr{
     font-weight:bold;
     text-decoration:none;
  }
- 
-.search-bar{
-
+.nav{
+	width:100%;
 }
+
+
+ .search-bar{
+	
+	width:80%;
+	 margin-left: auto;
+	 margin-right: auto;
+ }
+
 .about{
 text-align: center;
 padding-top: 20px;
@@ -57,7 +65,7 @@ width:100%;
   }
   
 #login-form{
-	
+
 	display: none;
 	margin-left: auto;
 	margin-right: auto;
@@ -236,18 +244,18 @@ span
 }
 
 /*slider*/
-#carouselExampleIndicators{
+#carousel{
 	position: relative;
 	height: 100vh;
 	width: 100%;
 }
-#carouselExampleIndicators .carousel-inner{
+#carousel .carousel-inner{
 	position: relative;
 	height: 100%;
 	width: 100%;
 	background: #000;
 }
-#carouselExampleIndicators .carousel-inner:before{
+#carousel .carousel-inner:before{
 	position: absolute;
 	content: '';
 	background: rgba(0, 0, 0, 0.45);
@@ -257,29 +265,29 @@ span
 	width: 100%;
 	z-index: 1;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item{
+#carousel .carousel-inner .carousel-item{
 	position: relative;
 	height: 100%;
 	width:100%;
-	background-image: url('bilder/bild1.jpg');
+	background-image: url('bilder/mobil1.jpg');
 	background-size: 100% 100%;
 	background-position: center;
 	background-attachment: fixed;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2){
-	background-image: url('bilder/bild2.jpg');
+#carousel .carousel-inner .carousel-item:nth-child(2){
+	background-image: url('bilder/mobil2.jpg');
 	background-size: 100% 100%;
 	background-position: center;
 	background-attachment: fixed;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3){
-	background-image: url('bilder/bild3.jpg');
+#carousel .carousel-inner .carousel-item:nth-child(3){
+	background-image: url('bilder/mobil3.jpg');
 	background-size: 100% 100%;
 	background-position: center;
 	background-attachment: fixed;
 }
 
-#carouselExampleIndicators .carousel-inner .carousel-item .info{
+#carousel .carousel-inner .carousel-item .info{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -288,17 +296,17 @@ span
 	z-index: 1;
 	text-align: center;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item h1{
+#carousel .carousel-inner .carousel-item h1{
 	height: auto;
 	color:rgb(211, 204, 204);
 	font-family:Garamond;
 	width: 100%;
 	z-index: 1;
 	text-align: center;
-	font-size: 5.5em;
+	font-size: 4em;
 	font-weight: 750;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item p{
+#carousel .carousel-inner .carousel-item p{
 	height: auto;
 	color: #ccc;
 	width: 100%;
